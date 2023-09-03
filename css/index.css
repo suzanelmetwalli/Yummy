@@ -1,0 +1,149 @@
+body {
+  background-color: black;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul li {
+  list-style: none;
+}
+.img {
+  width: 50px;
+}
+/* side menu */
+aside {
+  white-space: nowrap;
+  position: relative;
+  z-index: 99;
+}
+aside .menu-tab {
+  position: absolute;
+  left: -250px;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  transition: 0.3s;
+}
+aside .menu-tab .links {
+  overflow: hidden !important;
+}
+aside .menu-tab .links li {
+  margin-bottom: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s 0.2s top;
+  position: relative !important;
+}
+aside .menu-tab a {
+  color: white;
+}
+aside .menu-tab p {
+  padding-left: 2rem;
+  color: white;
+}
+aside .menu-header {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  transition: 0.3s;
+}
+aside .menu-header i {
+  cursor: pointer;
+}
+/* **************** */
+.box {
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.box .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  background-color: rgba(249, 246, 246, 0.792);
+  transition: 0.3s;
+}
+.box:hover .overlay {
+  top: 0;
+}
+.box-meal {
+  cursor: pointer;
+}
+/* loading */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  color: #fff;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.3s infinite linear;
+  transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em,
+      0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em,
+      0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+
+/* search inputs */
+#searchInputName.form-control,
+#searchInputLetter.form-control {
+  background-color: transparent;
+}
+#searchInputName.form-control:focus,
+#searchInputLetter.form-control:focus {
+  background-color: transparent;
+  color: white;
+}
+#searchInputName.form-control::placeholder,
+#searchInputLetter.form-control::placeholder {
+  color: grey;
+}

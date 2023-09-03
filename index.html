@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- main style -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Yummy</title>
+  </head>
+  <body>
+    <div class="loading">
+      <span class="loader"></span>
+    </div>
+    <!-- side menu -->
+    <aside class="d-flex position-fixed top-0 bottom-0 start-0">
+      <div
+        class="menu-tab bg-black d-flex flex-column justify-content-between py-5"
+      >
+        <ul class="links">
+          <li id="search">Search</li>
+          <li id="categories">Categories</li>
+          <li id="areas">Area</li>
+          <li id="ingredients">Ingredients</li>
+          <li id="contactus">Contact Us</li>
+        </ul>
+        <div class="datails">
+          <ul class="social">
+            <li>
+              <a href="#">
+                <i class="fas fa-brands fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-brands fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-globe"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="mb-0">
+            Copyright Â© 2019 All Rights <br />
+            Reserved.
+          </p>
+        </div>
+      </div>
+      <div
+        class="menu-header bg-white d-flex flex-column justify-content-between py-4 text-center"
+      >
+        <div class="img">
+          <img src="./images/logo.png" alt="logo png" class="w-100" />
+        </div>
+        <i class="fa-solid fa-2x fa-align-justify"></i>
+        <div class="icons">
+          <i class="fas fa-globe"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </aside>
+    <div class="container" id="searchContainer"></div>
+    <div class="container py-5">
+      <div class="row gy-4" id="dataContainer"></div>
+    </div>
+    <div class="container w-75 text-center py-5" id="contactWrap"></div>
+
+    <!-- **************************** -->
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
